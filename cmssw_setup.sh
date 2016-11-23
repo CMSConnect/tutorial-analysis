@@ -13,7 +13,8 @@ cmssw_setup() {
     
     #Keep track of release sandbox version 
     basedir=$PWD
-    rel=$(echo CMSSW_*)
+    rel=$(dirname $(tar -tvjf "$1" | head -1 | awk '{print $NF}'))
+    #rel=$(echo CMSSW_*)
     arch=$(ls $rel/.SCRAM/|grep slc)
     old_release_top=$(awk -F= '/RELEASETOP/ {print $2}' $rel/.SCRAM/slc*/Environment)
     tmp=$basedir/$rel

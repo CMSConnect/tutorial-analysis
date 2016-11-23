@@ -4,7 +4,6 @@
 # Load cmssw_setup function
 source cmssw_setup.sh
 
-echo "After executing setup"
 # Setup CMSSW Base
 export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
 source $VO_CMS_SW_DIR/cmsset_default.sh
