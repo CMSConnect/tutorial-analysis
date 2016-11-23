@@ -1,0 +1,8 @@
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/ttH125
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/ttJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/ttwJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/ttzJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/wJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/wzJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/zJets
+root://cmseos.fnal.gov:1094//eos/uscms/store/user/kenai/v2/zzJets

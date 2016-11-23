@@ -1,0 +1,14 @@
+Universe = vanilla
+
+Executable = runAnalysis.sh
+Arguments = $(channel)
+
+should_transfer_files = YES
+#transfer_input_files = cmssw_setup.sh, sandbox-CMSSW_7_2_3-86c7ff0.tar.bz2
+transfer_input_files = cmssw_setup.sh
+
+Error = log/job_$(Cluster)-$(Process).err
+Output = log/job_$(Cluster)-$(Process).out
+Log = log/job_$(Cluster).log
+
+Queue channel from channels_list.txt
