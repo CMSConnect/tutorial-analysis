@@ -1,5 +1,8 @@
 Universe = vanilla
 
+# Use rhel6 based cmssw analysis example
++REQUIRED_OS = "rhel6"
+
 Executable = runAnalysis.sh
 Arguments = $(channel)
 
