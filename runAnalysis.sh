@@ -19,7 +19,8 @@ source cmssw_setup.sh
 export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
 source $VO_CMS_SW_DIR/cmsset_default.sh
 
-# Download sandbox
+# Download sandbox and setup the proper scram arch
+export SCRAM_ARCH=slc6_amd64_gcc481
 sandbox_name="sandbox-CMSSW_7_2_3-553bbfa.tar.bz2"
 wget --no-check-certificate --progress=bar "http://stash.osgconnect.net/+khurtado/${sandbox_name}" || exit_on_error $? 150 "Could not download sandbox."
 
