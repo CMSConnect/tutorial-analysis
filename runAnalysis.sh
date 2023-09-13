@@ -22,7 +22,7 @@ source $VO_CMS_SW_DIR/cmsset_default.sh
 # Download sandbox and setup the proper scram arch
 export SCRAM_ARCH=slc6_amd64_gcc481
 sandbox_name="sandbox-CMSSW_7_2_3-553bbfa.tar.bz2"
-wget --no-check-certificate --progress=bar "http://stash.osgconnect.net/+khurtado/${sandbox_name}" || exit_on_error $? 150 "Could not download sandbox."
+wget --no-check-certificate --progress=bar "https://stash.osgconnect.net/cms-user/khurtado/${sandbox_name}" || exit_on_error $? 150 "Could not download sandbox."
 
 # Setup framework from sandbox
 cmssw_setup $sandbox_name || exit_on_error $? 151 "Could not unpack sandbox"
@@ -36,7 +36,7 @@ channel_name="$(basename $channel_rootpath)"
 cd $CMSSW_BASE/src/ttH-13TeVMultiLeptons/TemplateMakers/test
 
 #Download ROOTLogon to define plotting styles and load some libraries
-wget --no-check-certificate --progress=bar "http://stash.osgconnect.net/+khurtado/rootlogon.C" || exit_on_error $? 150 "Could not download rootlogon."
+wget --no-check-certificate --progress=bar "https://stash.osgconnect.net/cms-user/khurtado/rootlogon.C" || exit_on_error $? 150 "Could not download rootlogon."
 
 # Execute ROOT script
 root -b -q -l addvarstotree.C+"(\"$channel_rootpath/*.root\",\"$channel_name.root\")" || exit_on_error $? 152 "Failed running ROOT script."
